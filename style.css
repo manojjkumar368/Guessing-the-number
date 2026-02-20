@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    text-align:center;
+    font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+    background:url(img/k.png) no-repeat center center/cover;
+    color:thistle;
+}
+
+.num{
+    font-size:30px;
+    color:#F5F5F5;
+}
+
+.one{
+    width:90%;
+    max-width:500px;
+    padding:2rem;
+    border-radius:30px;
+    border:3px solid #2f2f2f;
+    box-shadow:0 0 50px rgba(255,0,0,0.5);
+    transition:all 0.3s ease;
+    background:rgba(0,0,0,0.6);
+}
+
+p{
+    font-size:20px;
+    color:#F5F5F5;
+}
+
+.two{
+    margin-top:20px;
+    padding:10px 20px;
+    font-size:16px;
+    background-color:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.two:hover{
+    background-color:#45a049;
+    transition:0.5s;
+}
+
+#o{
+    padding:10px;
+    font-size:16px;
+    border:5px solid rgba(255,0,0,0.5);
+    border-radius:20px;
+    background-color:#f0f0f0;
+    font-weight:300;
+    font-style:oblique;
+    width:80%;
+}
+
+/* 📱 Mobile Screens */
+@media screen and (max-width: 600px){
+    .num{
+        font-size:22px;
+    }
+    p{
+        font-size:16px;
+    }
+    .one{
+        padding:1.5rem;
+    }
+}
+
+/* 💻 Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .one{
+        max-width:450px;
+    }
+}
+
+/* 🖥 Large Screens */
+@media screen and (min-width: 1025px){
+    .one{
+        max-width:500px;
+    }
+}
